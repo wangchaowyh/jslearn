@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input=prompt("输入你想说的话");
+        var i=input.search(/([我卧]|wo)([草肏操槽|cao])/i);
+        if (i!=-1) {
+            document.write(`<h1>包含敏感词汇，请重新输入</h1>`);
+            
+        }else{
+            document.write(`然哥说：${input}`);
+        }
+    </script>
+</body>
+</html>
